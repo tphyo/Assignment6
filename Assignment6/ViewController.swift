@@ -17,7 +17,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var myCountryLabel: UILabel!
     @IBOutlet weak var myDatePicker: UIDatePicker!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var tennisRadioButton: UIButton!
@@ -25,6 +24,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var footBallRadioButton: UIButton!
     @IBOutlet weak var shuttleRadioButton: UIButton!
     @IBOutlet weak var termsButton: UIButton!
+    let dateFormatter = DateFormatter()
     
     let country_list = NSLocale.isoCountryCodes.map
     {
@@ -70,9 +70,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        myCountryLabel.text = String(country_list[row])
-    }
     @IBAction func registerButtonTapped(_ sender: Any) {
         if ((firstNameTextField.text!.isEmpty || lastNameTextField.text!.isEmpty || phoneTextField.text!.isEmpty || emailTextField.text!.isEmpty || AddressTextField.text!.isEmpty || cityTextField.text!.isEmpty || regionTextField.text!.isEmpty || postalCodeTextField.text!.isEmpty) || (footBallRadioButton.isSelected == false && hockeyRadioButton.isSelected == false && tennisRadioButton.isSelected == false && shuttleRadioButton.isSelected == false)) {
             let dialogMessage = UIAlertController(title: "Attention", message: "Please fill all the details.", preferredStyle: .alert)
