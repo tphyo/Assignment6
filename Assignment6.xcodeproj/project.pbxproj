@@ -13,7 +13,6 @@
 		A34B799D291EEC8D00C45EA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34B799B291EEC8D00C45EA5 /* Main.storyboard */; };
 		A34B799F291EEC9100C45EA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34B799E291EEC9100C45EA5 /* Assets.xcassets */; };
 		A34B79A2291EEC9100C45EA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34B79A0291EEC9100C45EA5 /* LaunchScreen.storyboard */; };
-		A362E92B292324010053EB9E /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362E92A292324010053EB9E /* RadioButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		A34B799E291EEC9100C45EA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A34B79A1291EEC9100C45EA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A34B79A3291EEC9100C45EA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A362E92A292324010053EB9E /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 				A34B7997291EEC8D00C45EA5 /* SceneDelegate.swift */,
 				A34B7999291EEC8D00C45EA5 /* ViewController.swift */,
 				A34B799B291EEC8D00C45EA5 /* Main.storyboard */,
-				A362E92A292324010053EB9E /* RadioButton.swift */,
 				A34B799E291EEC9100C45EA5 /* Assets.xcassets */,
 				A34B79A0291EEC9100C45EA5 /* LaunchScreen.storyboard */,
 				A34B79A3291EEC9100C45EA5 /* Info.plist */,
@@ -144,7 +141,6 @@
 				A34B799A291EEC8D00C45EA5 /* ViewController.swift in Sources */,
 				A34B7996291EEC8D00C45EA5 /* AppDelegate.swift in Sources */,
 				A34B7998291EEC8D00C45EA5 /* SceneDelegate.swift in Sources */,
-				A362E92B292324010053EB9E /* RadioButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
