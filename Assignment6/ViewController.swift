@@ -23,6 +23,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var hockeyRadioButton: UIButton!
     @IBOutlet weak var footBallRadioButton: UIButton!
     @IBOutlet weak var shuttleRadioButton: UIButton!
+    @IBOutlet weak var termsLabel: UILabel!
     @IBOutlet weak var termsButton: UIButton!
     let dateFormatter = DateFormatter()
     
@@ -48,6 +49,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         shuttleRadioButton.setImage(UIImage.init(named: "radio-button-checked"), for: .selected)
         termsButton.setImage(UIImage.init(named: "radio-button-unchecked"), for: .normal)
         termsButton.setImage(UIImage.init(named: "radio_button_checked_with_tick"), for: .selected)
+        self.addGesture()
     }
     
     override func didReceiveMemoryWarning() {
@@ -67,6 +69,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     // The data to return fopr the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return country_list[row]
+    }
+    
+    func addGesture() {
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.labelTapped(_:)))
+        tap.numberOfTapsRequired = 1
+        self.termsLabel.isUserInteractionEnabled = true
+        self.termsLabel.addGestureRecognizer(tap)
+    }
+
+    @objc
+    func labelTapped(_ tap: UITapGestureRecognizer) {
+
+         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+         let SecondVC = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        self.present(SecondVC, animated: true, completion: nil)
     }
     
     

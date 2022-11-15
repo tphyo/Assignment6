@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -216,10 +217,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to the terms of service." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-ml-0na">
-                                                <rect key="frame" x="36" y="762" width="198" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to the" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-ml-0na">
+                                                <rect key="frame" x="36" y="762" width="87" height="17"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="198" id="FJT-Jx-gcG"/>
+                                                    <constraint firstAttribute="width" constant="87" id="FJT-Jx-gcG"/>
                                                     <constraint firstAttribute="height" constant="17" id="T3u-u4-fXX"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -304,6 +305,13 @@
                                                     <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6RZ-io-4pB"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="terms of service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luW-Up-6cV">
+                                                <rect key="frame" x="127" y="761" width="105" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <color key="highlightedColor" name="AccentColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -336,7 +344,7 @@
                                             <constraint firstItem="g9s-ml-0na" firstAttribute="leading" secondItem="T3H-SX-Abi" secondAttribute="trailing" constant="4" id="kG8-jY-V05"/>
                                             <constraint firstItem="aF6-JV-pFD" firstAttribute="top" secondItem="TyI-ia-abO" secondAttribute="bottom" constant="60" id="kfB-M2-xci"/>
                                             <constraint firstAttribute="bottom" secondItem="aF6-JV-pFD" secondAttribute="bottom" constant="92" id="kqe-4x-Pr1"/>
-                                            <constraint firstAttribute="trailing" secondItem="g9s-ml-0na" secondAttribute="trailing" constant="159" id="lku-LQ-tf9"/>
+                                            <constraint firstAttribute="trailing" secondItem="g9s-ml-0na" secondAttribute="trailing" constant="270" id="lku-LQ-tf9"/>
                                             <constraint firstItem="NY4-Pa-565" firstAttribute="top" secondItem="AIE-bd-zmZ" secondAttribute="bottom" constant="7.6699999999999999" id="mxZ-Pf-Jay"/>
                                             <constraint firstItem="T3H-SX-Abi" firstAttribute="centerY" secondItem="g9s-ml-0na" secondAttribute="centerY" id="oyc-cH-65A"/>
                                             <constraint firstItem="g9s-ml-0na" firstAttribute="top" secondItem="qp1-eX-fKv" secondAttribute="bottom" constant="148" id="qce-Wl-7pj"/>
@@ -383,14 +391,74 @@
                         <outlet property="successLabel" destination="TyI-ia-abO" id="cs9-06-aVi"/>
                         <outlet property="tennisRadioButton" destination="3X4-O8-vem" id="4Vw-pZ-thK"/>
                         <outlet property="termsButton" destination="T3H-SX-Abi" id="RlO-8Z-LZ0"/>
+                        <outlet property="termsLabel" destination="luW-Up-6cV" id="jfc-cL-wgu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="N8N-Pu-sE3">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="uj0-cm-ddM" customClass="SecondViewController" customModule="Assignment6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qgm-7Q-K2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lZk-fh-mes">
+                                <rect key="frame" x="16" y="105" width="361" height="714"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Sample Terms and Conditions Template
+Please read these terms and conditions ("terms and conditions", "terms") carefully before using [website URL] website (“website”, "service") operated by [company name] ("us", 'we", "our").
+Conditions of use
+By using this website, you certify that you have read and reviewed this Agreement and that you agree to comply with its terms. If you do not want to be bound by the terms of this Agreement, you are advised to stop using the website accordingly. [company name] only grants use and access of this website, its products, and its services to those who have accepted its terms.
+Privacy policy
+Before you continue using our website, we advise you to read our privacy policy [link to privacy policy] regarding our user data collection. It will help you better understand our practices.
+Age restriction
+You must be at least 18 (eighteen) years of age before you can use this website. By using this website, you warrant that you are at least 18 years of age and you may legally adhere to this Agreement. [company name] assumes no responsibility for liabilities related to age misrepresentation.
+Intellectual property
+You agree that all materials, products, and services provided on this website are the property of [company name], its affiliates, directors, officers, employees, agents, suppliers, or licensors including all copyrights, trade secrets, trademarks, patents, and other intellectual property. You also agree that you will not reproduce or redistribute the [company name]’s intellectual property in any way, including electronic, digital, or new trademark registrations.
+You grant [company name] a royalty-free and non-exclusive license to display, use, copy, transmit, and broadcast the content you upload and publish. For issues regarding intellectual property claims, you should contact the company in order to come to an agreement.
+User accounts
+As a user of this website, you may be asked to register with us and provide private information. You are responsible for ensuring the accuracy of this information, and you are responsible for maintaining the safety and security of your identifying information. You are also responsible for all activities that occur under your account or password.
+If you think there are any possible issues regarding the security of your account on the website, inform us immediately so we may address them accordingly.
+We reserve all rights to terminate accounts, edit or remove content and cancel orders at our sole discretion.
+Applicable law
+By using this website, you agree that the laws of the [your location], without regard to principles of conflict laws, will govern these terms and conditions, or any dispute of any sort that might come between [company name] and you, or its business partners and associates.
+Disputes
+Any dispute related in any way to your use of this website or to products you purchase from us shall be arbitrated by state or federal court [your location] and you consent to exclusive jurisdiction and venue of such courts.
+Indemnification
+You agree to indemnify [company name] and its affiliates and hold [company name] harmless against legal claims and demands that may arise from your use or misuse of our services. We reserve the right to select our own legal counsel. 
+Limitation on liability
+[company name] is not liable for any damages that may occur to you as a result of your misuse of our website.
+[company name] reserves the right to edit, modify, and change this Agreement at any time. We shall let our users know of these changes through electronic mail. This Agreement is an understanding between [company name] and the user, and this supersedes and replaces all prior agreements regarding the use of this website.
+
+PRO TIP: Save your time and take the guesswork out of the legal jargon with the professional terms and conditions generator trusted by thousands of small businesses.
+
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aOG-Uo-7bh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybu-3u-Kj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791.60305343511448" y="-118.30985915492958"/>
+        </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
